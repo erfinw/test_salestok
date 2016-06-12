@@ -1,6 +1,14 @@
 <?php
 // Connect to database
-	$connection=mysqli_connect('us-cdbr-iron-east-04.cleardb.net','b25c58f2d6b8cf','d4895c94','heroku_38b7b227b5e55e2');
+	
+	$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+	
+	$server = $url["host"];
+	$username = $url["user"];
+	$password = $url["pass"];
+	$db = substr($url["path"], 1);
+	
+	$connection = mysqli_connect($server, $username, $password, $db);
 
 	$request_method=$_SERVER["REQUEST_METHOD"];
 	switch($request_method)
