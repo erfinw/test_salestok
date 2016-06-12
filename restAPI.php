@@ -117,10 +117,10 @@
 		global $connection;
 		parse_str(file_get_contents("php://input"),$post_vars);
 		$name=$post_vars["name"];
-		$price=$post_vars["price"];
-		$quantity=$post_vars["quantity"];
+		$size=$post_vars["size"];
 		$color=$post_vars["color"];
-		$query="UPDATE products SET name='{$name}', price={$price}, quantity={$quantity}, color='{$color}' WHERE product_id=".$product_id;
+		$price=$post_vars["price"];
+		$query="UPDATE products SET name='{$name}', size={$size}, price={$price},  color='{$color}' WHERE product_id=".$product_id;
 		if(mysqli_query($connection, $query))
 		{
 			$response=array(
