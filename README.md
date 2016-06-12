@@ -1,4 +1,4 @@
 # test_salestok
 Hallo.
 
-Dont Forget to change into your user and password Database
+Do not forget to change the user password database in accordance with your settings
