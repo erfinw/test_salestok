@@ -67,7 +67,7 @@ table#tbl_test {
 }
 </style>
 
- Filter By :
+ Filter :
 <form method="get" action="user.php">
  <table>
 	<tr>
