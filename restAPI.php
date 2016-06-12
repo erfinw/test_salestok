@@ -1,6 +1,6 @@
 <?php
 // Connect to database
-	$connection=mysqli_connect('localhost','root','','test');
+	$connection=mysqli_connect('us-cdbr-iron-east-04.cleardb.net','b25c58f2d6b8cf','d4895c94','heroku_38b7b227b5e55e2');
 
 	$request_method=$_SERVER["REQUEST_METHOD"];
 	switch($request_method)
