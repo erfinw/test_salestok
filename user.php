@@ -1,6 +1,6 @@
 <?php session_start();
 
-$server="http://localhost/salestok_test";
+$server="https://testsalestok.herokuapp.com";
 //for post
 
 if (isset($_POST["formid"])	&& $_POST["formid"] == $_SESSION["formid"]){ 
